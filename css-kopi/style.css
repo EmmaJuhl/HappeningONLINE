@@ -1,0 +1,281 @@
+/**
+ * fil: css/style.css
+
+ **/
+/* Variabler: genbruges og gør designvalg enkle */
+/* utopia-std-headline, serif; overskrift*/
+@import url('https://use.typekit.net/jpv4qsp.css');
+/*kepler-std-semicondensed-dis, serif; ---underoverskrift*/
+@import url("https://use.typekit.net/jpv4qsp.css");
+/*font-family: montserrat, sans-serif;*/
+@import url("https://use.typekit.net/qtj1aqs.css");
+
+:root {
+  /* farver */
+  --blue: #a6c2d8;
+  --white: #ffffff;
+  --yellow: #ffff9e;
+  --green: #a6d8ac;
+  /* fonte */
+
+}
+
+/* for tilpasning af baggrunden */
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: var(--yellow);
+  font-family: 'utopia-std-headline', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*header menu punkter*/
+nav {
+  width: 100%;
+  background: var(--blue);
+  overflow: hidden;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.Genbrugscentralen{
+  font-size: 12;
+}
+
+.submenu {
+  display: none;
+}
+
+.menu>li:hover>.submenu {
+  display: inline-grid;
+
+}
+
+/*for at få det til at floate med skærmen*/
+li {
+  float: left;
+}
+
+/*menu punkter design*/
+nav a {
+  width: auto;
+  display: flex;
+  padding: 25px 125px;
+  text-decoration: none;
+  color: var(--yellow);
+  text-align: center;
+  margin-left: auto;
+  font-size: 20px;
+  font-family: 'kepler-std-semicondensed-dis', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*markering når man trykke*/
+nav a :hover {
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+/* Layout */
+/* Typografi */
+h1 {
+  color: var(--blue);
+  text-decoration: underline var(--blue);
+  background-color: var(--yellow);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+/*Dette er billederne til forsiden*/
+/*forside*/
+#sandwich {
+  display: flex;
+}
+
+.forsidebilleder {
+  width: 100%;
+  height: auto;
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.forsidebilleder h4 {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  font-family: 'utopia-std-headline';
+  text-decoration-color: var(--yellow);
+  font-size: 20px;
+}
+
+/*tekst til artikler*/
+.forsidetekst {
+  color: var(--blue);
+  font-style: normal;
+  text-align: center;
+  margin-left: 135px;
+  font-family: 'montserrat', sans-serif;
+
+}
+
+/*links*/
+a {
+  color: var(--blue);
+  text-decoration-line: none;
+}
+
+p h4 {
+  box-sizing: border-box;
+}
+
+/*overskrift*/
+h3 {
+  font-size: 33px;
+  margin-bottom: 1px;
+  text-decoration: underline var(--blue);
+}
+
+/*underoverskrift*/
+h4 {
+  color: var(--blue);
+  margin-top: 60px;
+}
+
+
+h5{
+color: var(--blue);
+}
+.dyr {
+  width: 100%;
+  height: auto;
+  border-width: thin;
+  border-style: solid;
+  border-color: lightgrey;
+}
+
+/*forside slutter*/
+/*billede og artikel side til dyrehaven begynder*/
+.have0 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 150px;
+  display: block;
+}
+
+.have1 {
+  height: 100%;
+  width: auto;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-top: 70px;
+  float: right;
+  border-width: thin;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.have2 {
+  height: 100%;
+  width: auto;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-top: 50px;
+  float: left;
+  border-width: thin;
+  margin-left: 70px;
+  margin-right: 10%;
+  margin-bottom: 70px;
+}
+
+.bar{
+  height: 100%;
+  width: auto;
+  border-style: solid;
+  border-color: lightgrey;
+  margin-top: 70px;
+  float: left;
+  border-width: thin;
+  margin-right: 100px;
+  margin-left: 100px;
+
+}
+
+#sandwich2 {
+  display: flex;
+}
+
+/*overskrift til artiklen dyrehaven1*/
+h4 {
+  display: block;
+  text-decoration: none;
+  font-family: 'utopia-std-headline';
+  text-decoration-color: var(--yellow);
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+h6 {
+  display: block;
+  text-decoration: none;
+  font-family: 'utopia-std-headline';
+  color: var(--blue);
+  font-size: 20px;
+  padding-top: 15px;
+  margin-left: 70px;
+}
+
+h5 {
+  display: block;
+  text-decoration: none;
+  font-family: 'utopia-std-headline';
+  text-decoration-color: var(--yellow);
+  font-size: 20px;
+  padding-top: 15px;
+  margin-right: 60px;
+}
+
+/*artiklerne*/
+p {
+  padding: 10px;
+  line-height: 2;
+  margin-left: 50px;
+  max-width: 50%;
+  display: flex;
+  font-family: 'montserrat', sans-serif;
+  text-align: center;
+
+}
+
+.text3{
+display: block;
+margin-left: 800px;
+}
+
+.adresse{
+  float: right;
+  margin-right: 100px;
+  margin-top: 90px;
+}
+/*SoMe links og iconner*/
+/*footer*/
+.footer {
+  width: 100vw;
+  overflow: hidden;
+  padding: 70px 0;
+  box-sizing: border-box;
+  background-color: var(--blue);
+  display: block;
+  text-decoration: none;
+  margin: auto;
+  float: left;
+}
